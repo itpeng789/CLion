@@ -39,19 +39,9 @@ int main(){
      int right = i -1;
     cout<<"Please a number : "<<"\n";
     cin >> lind;
-    while(left <= right){
-        int mid = (right - left) / 2;
-        int find = fin[mid];
-        if(find < lind){
-            left = mid + 1;
-        }
-        else if(lind < find){
-            right = mid -1;
-        }
-        else if (lind == find ) {
-            cout << "find = " << mid << "\n";
-            break;
-        }
+    for(int w = 0; w < i;w++){
+        if(fin[w] == lind)
+            cout <<"This is find = " <<lind<< "\n"<< "Location of index " << w << "\n";
     }
 
 
